@@ -105,6 +105,7 @@ uint8_t SoftI2C_ReadByte(SoftI2C_TypeDef *SoftI2Cx)
 
 void SoftI2C_Ack(SoftI2C_TypeDef *SoftI2Cx)
 {
+    SCL_Clr;
     SDA_Clr;
     Delay;
     SCL_Set;
